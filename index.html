@@ -1,0 +1,51 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Apostilas de idiomas</title><style>
+:root{--bg:#f6f7fa;--fg:#151d2b;--muted:#566173;--line:#dde2ea;--card:#fff;--acc:#1f3a68;--acc2:#b8862a;--ok:#1f6b2a}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1420;--fg:#e8ecf3;--muted:#9aa5b8;--line:#263247;--card:#151e2e;--acc:#9bb7e6;--acc2:#e3b860;--ok:#7fd18a}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+header.hero{background:linear-gradient(160deg,var(--h1),var(--h2));color:#fff;padding:56px 0 48px}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px;align-items:center}
+.hero .grid>*,.cols>*{min-width:0}
+.cols{grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+.kick{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--hk)}
+h1{font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.08;margin:.3em 0 .35em;text-wrap:balance}
+.hero p.sub{font-size:1.15rem;color:#d6e0ee;margin:0 0 22px}
+.hero img{width:100%;height:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#ffce5a;color:#111;font-weight:800;
+  padding:16px 26px;border-radius:12px;text-decoration:none;font-size:1.05rem;min-height:54px}
+.btn.sec{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5);font-weight:700}
+.btn[aria-disabled=true]{opacity:.55;pointer-events:none}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.preco{font-size:1.9rem;font-weight:800;color:#fff}.preco small{font-size:.9rem;font-weight:500;color:#cfd8e6;display:block}
+section{padding:54px 0}section+section{border-top:1px solid var(--line)}
+h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2;margin:0 0 18px;text-wrap:balance}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:1.08rem}.card p{margin:0;color:var(--muted)}
+ul.check{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.check li{padding-left:30px;position:relative}ul.check li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}
+ul.nao li::before{content:"–";color:var(--muted)}
+.amostras{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.amostras figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px}
+.amostras img{width:100%;height:auto;border-radius:6px;display:block}
+.amostras figcaption{font-size:.9rem;color:var(--muted);padding:8px 4px 2px}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden}
+td,th{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{width:34%;color:var(--muted);font-weight:600}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+details+details{margin-top:10px}summary{font-weight:700;cursor:pointer}
+.final{background:linear-gradient(160deg,var(--h1),var(--h2));color:#fff;text-align:center}
+.final h2{color:#fff}.nota{font-size:.88rem;color:var(--muted)}
+footer{padding:30px 0 50px;font-size:.88rem;color:var(--muted)}
+a{color:var(--acc)}
+@media (max-width:760px){.hero .grid{grid-template-columns:minmax(0,1fr)}.hero img{max-width:420px;margin:0 auto;display:block}}
+
+:root{--h1:#1f3a68;--h2:#0c1830;--hk:#e7c66a}</style></head><body>
+<header class="hero"><div class="w"><div class="kick">Apostilas digitais</div><h1>Material de estudo organizado, explicado em português</h1></div></header>
+<section><div class="w cols">
+<div class="card"><img src="img/mockup_toefl_fundo_claro.png" alt="" style="width:100%"><h3>TOEFL iBT — formato 2026</h3><p>PDF + 44 áudios · R$ 39,90</p><p><a href="toefl.html">Ver detalhes</a></p></div>
+<div class="card"><img src="img/mockup_alemao_fundo_claro.png" alt="" style="width:100%"><h3>Gramática Alemã A1 e A2</h3><p>PDF · R$ 39,90</p><p><a href="alemao.html">Ver detalhes</a></p></div>
+<div class="card"><img src="img/mockup_combo_fundo_claro.png" alt="" style="width:100%"><h3>Combo</h3><p>As duas · R$ 59,90</p><p><a href="combo.html">Ver detalhes</a></p></div>
+</div></section><footer><div class="w">Material independente. TOEFL e TOEFL iBT são marcas registradas da ETS; este material não é afiliado à ETS nem endossado por ela. Material independente, não afiliado ao Goethe-Institut nem endossado por ele.</div></footer></body></html>
