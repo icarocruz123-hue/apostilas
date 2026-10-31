@@ -1,0 +1,127 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><title>Áudios Entrevista em Inglês</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
+<style>
+/* Layout: uma coluna estreita; o player fixo embaixo é o único elemento com destaque. */
+:root{
+  --bg:#f5f6f9; --surface:#ffffff; --fg:#17223b; --muted:#5d6880; --line:#dde2ec;
+  --navy:#134e44; --gold:#b8862a; --hi:#fff6e2;
+  --f-body:"Source Sans 3",system-ui,sans-serif; --f-disp:"Source Serif 4",Georgia,serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1524; --surface:#16203a; --fg:#e6ebf5; --muted:#9aa6bf; --line:#27334f;
+  --navy:#7fd1bd; --gold:#e3b860; --hi:#2a2a1c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1524; --surface:#16203a; --fg:#e6ebf5; --muted:#9aa6bf; --line:#27334f;
+  --navy:#7fd1bd; --gold:#e3b860; --hi:#2a2a1c; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 var(--f-body)}
+.wrap{max-width:640px;margin:0 auto;padding-block:28px 140px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.stripe{display:flex;width:84px;height:5px;margin-bottom:18px}
+.stripe i{flex:1}.stripe i:nth-child(1){background:#c99a2e}.stripe i:nth-child(2){background:var(--line)}.stripe i:nth-child(3){background:#b23a1e}
+h1{font:600 1.75rem/1.2 var(--f-disp);margin:0 0 6px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 26px}
+h2{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:28px 0 8px}
+.lista{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.play{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:44px 1fr 28px;align-items:center;gap:12px;
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer}
+.play:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums;font-weight:700;color:var(--navy);font-size:1.05rem;text-align:center}
+.tt{min-width:0;font-weight:600}
+.tt small{display:block;font-weight:400;font-size:.84rem;color:var(--muted)}
+.ic{width:0;height:0;border-left:12px solid var(--navy);border-top:8px solid transparent;border-bottom:8px solid transparent;justify-self:center}
+.dl{display:inline-block;margin:4px 0 2px 68px;font-size:.82rem;color:var(--muted)}
+.trk.on .play{border-color:var(--gold);background:var(--hi)}
+.trk.on .ic{width:12px;height:14px;border:0;border-left:4px solid var(--navy);border-right:4px solid var(--navy)}
+.trk.alvo .play{border-color:var(--gold);box-shadow:0 0 0 3px color-mix(in srgb,var(--gold) 30%,transparent)}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);
+  padding-block:12px calc(12px + env(safe-area-inset-bottom,0px));
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar .in{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:6px}
+.bar .now{font-weight:600;font-size:.95rem;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .now span{color:var(--muted);font-weight:400}
+audio{width:100%}
+.hero{background:var(--surface);border:2px solid var(--gold);border-radius:14px;padding:18px;margin:0 0 8px;display:flex;flex-direction:column;gap:6px}
+.hk{margin:0;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.ht{margin:0 0 8px;font:600 1.25rem/1.25 var(--f-disp);text-wrap:balance}
+.hi{margin:-4px 0 8px;color:var(--muted);font-size:.9rem}
+.como{margin:0 0 10px;padding:10px 12px;border-radius:10px;background:var(--bg);border-left:4px solid var(--gold);font-size:.95rem}
+.como b{display:block;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+.big{all:unset;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:12px;background:var(--navy);color:var(--bg);
+  border-radius:12px;min-height:64px;font-weight:700;font-size:1.2rem;cursor:pointer}
+.big:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.bi{width:0;height:0;border-left:16px solid currentColor;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.big.pause .bi{width:14px;height:20px;border:0;border-left:5px solid currentColor;border-right:5px solid currentColor}
+.note{color:var(--muted);font-size:.85rem;margin-top:30px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head><body><div class="wrap">
+  <div class="stripe"><i></i><i></i><i></i></div>
+  <h1>Áudios do kit Entrevista em Inglês</h1>
+  <p class="sub">16 faixas. Cada uma mostra a atividade e a página do livro em que é usada. O QR code de cada atividade abre direto na faixa certa.</p>
+  <div class="hero" id="hero" hidden>
+    <p class="hk" id="hk">Faixa</p>
+    <p class="ht" id="ht"></p>
+    <p class="hi" id="hi"></p>
+    <p class="como" id="como"></p>
+    <button class="big" id="big" type="button"><span class="bi" aria-hidden="true"></span><span id="bl">Tocar</span></button>
+  </div>
+  <section><h2>Unidade 2</h2><ol class="lista"><li class="trk" id="t01" data-como="Ouça os três pitches sem ler o texto e anote cargo, resultado e motivo de cada um. Depois, ouça de novo lendo o livro."><button class="play" data-src="a/f01.mp3" aria-label="Tocar faixa 01"><span class="num">01</span><span class="tt">Três modelos de pitch<small>Livro, página 17</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f01.mp3" download="Entrevista_faixa_01.mp3">baixar MP3</a></li></ol></section>
+<section><h2>Unidade 3</h2><ol class="lista"><li class="trk" id="t02" data-como="Ouça cada resposta e marque no quadro onde começa cada parte do STAR (situação, tarefa, ação, resultado)."><button class="play" data-src="a/f02.mp3" aria-label="Tocar faixa 02"><span class="num">02</span><span class="tt">Três respostas STAR<small>Livro, página 23</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f02.mp3" download="Entrevista_faixa_02.mp3">baixar MP3</a></li></ol></section>
+<section><h2>Unidade 4</h2><ol class="lista"><li class="trk" id="t03" data-como="Ligue o gravador do celular e dê play. Depois de cada bipe, responda à pergunta; o silêncio dura 60 segundos. Não pause o áudio."><button class="play" data-src="a/f03.mp3" aria-label="Tocar faixa 03"><span class="num">03</span><span class="tt">Treino de abertura e motivação<small>Livro, página 28</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f03.mp3" download="Entrevista_faixa_03.mp3">baixar MP3</a></li><li class="trk" id="t04" data-como="Ligue o gravador e dê play. Depois de cada bipe, conte uma história no formato STAR; o silêncio dura 90 segundos. Não pause o áudio."><button class="play" data-src="a/f04.mp3" aria-label="Tocar faixa 04"><span class="num">04</span><span class="tt">Treino de equipe e conflitos<small>Livro, página 30</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f04.mp3" download="Entrevista_faixa_04.mp3">baixar MP3</a></li><li class="trk" id="t05" data-como="Ligue o gravador e dê play. Depois de cada bipe, conte uma história no formato STAR; o silêncio dura 90 segundos. Não pause o áudio."><button class="play" data-src="a/f05.mp3" aria-label="Tocar faixa 05"><span class="num">05</span><span class="tt">Treino de resultados, pressão e liderança<small>Livro, página 32</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f05.mp3" download="Entrevista_faixa_05.mp3">baixar MP3</a></li><li class="trk" id="t06" data-como="Ligue o gravador e dê play. Depois de cada bipe, responda; o silêncio dura 60 segundos. Não pause o áudio."><button class="play" data-src="a/f06.mp3" aria-label="Tocar faixa 06"><span class="num">06</span><span class="tt">Treino de perguntas difíceis<small>Livro, página 34</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f06.mp3" download="Entrevista_faixa_06.mp3">baixar MP3</a></li></ol></section>
+<section><h2>Unidade 5</h2><ol class="lista"><li class="trk" id="t07" data-como="Ligue o gravador e dê play. Depois de cada bipe, responda com os seus dados reais (faixa salarial, prazo, horário); o silêncio dura 45 segundos."><button class="play" data-src="a/f07.mp3" aria-label="Tocar faixa 07"><span class="num">07</span><span class="tt">Treino de salário, contrato e logística<small>Livro, página 39</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f07.mp3" download="Entrevista_faixa_07.mp3">baixar MP3</a></li></ol></section>
+<section><h2>Unidade 6</h2><ol class="lista"><li class="trk" id="t08" data-como="Dê play e repita cada pergunta depois do bipe, copiando o ritmo e a entonação. Não pause o áudio."><button class="play" data-src="a/f08.mp3" aria-label="Tocar faixa 08"><span class="num">08</span><span class="tt">Perguntas para o entrevistador<small>Livro, página 42</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f08.mp3" download="Entrevista_faixa_08.mp3">baixar MP3</a></li></ol></section>
+<section><h2>Unidade 7</h2><ol class="lista"><li class="trk" id="t09" data-como="Dê play e repita cada frase depois do bipe. Repita a faixa até as frases saírem sem você pensar."><button class="play" data-src="a/f09.mp3" aria-label="Tocar faixa 09"><span class="num">09</span><span class="tt">Frases de apoio<small>Livro, página 46</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f09.mp3" download="Entrevista_faixa_09.mp3">baixar MP3</a></li></ol></section>
+<section><h2>Unidade 8</h2><ol class="lista"><li class="trk" id="t10" data-como="Ouça a palavra e a frase; depois do bipe, repita as duas. Preste atenção na sílaba tônica."><button class="play" data-src="a/f10.mp3" aria-label="Tocar faixa 10"><span class="num">10</span><span class="tt">Palavras do mundo corporativo<small>Livro, página 50</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f10.mp3" download="Entrevista_faixa_10.mp3">baixar MP3</a></li><li class="trk" id="t11" data-como="Parte 1: repita cada verbo e frase depois do bipe. Parte 2: ouça cada frase (ela toca duas vezes) e anote o número."><button class="play" data-src="a/f11.mp3" aria-label="Tocar faixa 11"><span class="num">11</span><span class="tt">Terminação -ed e números<small>Livro, página 51</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f11.mp3" download="Entrevista_faixa_11.mp3">baixar MP3</a></li></ol></section>
+<section><h2>Unidade 10</h2><ol class="lista"><li class="trk" id="t12" data-como="Ligue o gravador e dê play. Responda em voz alta depois de cada bipe; o silêncio tem o tempo da resposta. Não pause o áudio."><button class="play" data-src="a/f12.mp3" aria-label="Tocar faixa 12"><span class="num">12</span><span class="tt">Simulação 1 - Recruiter screen<small>Livro, página 61</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f12.mp3" download="Entrevista_faixa_12.mp3">baixar MP3</a></li><li class="trk" id="t13" data-como="Ligue o gravador e dê play. Responda em voz alta depois de cada bipe; o silêncio tem o tempo da resposta. Não pause o áudio."><button class="play" data-src="a/f13.mp3" aria-label="Tocar faixa 13"><span class="num">13</span><span class="tt">Simulação 2 - Hiring manager<small>Livro, página 61</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f13.mp3" download="Entrevista_faixa_13.mp3">baixar MP3</a></li><li class="trk" id="t14" data-como="Ligue o gravador e dê play. Responda em voz alta depois de cada bipe; o silêncio tem o tempo da resposta. Não pause o áudio."><button class="play" data-src="a/f14.mp3" aria-label="Tocar faixa 14"><span class="num">14</span><span class="tt">Simulação 3 - Painel<small>Livro, página 61</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f14.mp3" download="Entrevista_faixa_14.mp3">baixar MP3</a></li><li class="trk" id="t15" data-como="Ligue o gravador e dê play. Responda em voz alta depois de cada bipe; o silêncio tem o tempo da resposta. Não pause o áudio."><button class="play" data-src="a/f15.mp3" aria-label="Tocar faixa 15"><span class="num">15</span><span class="tt">Simulação 4 - Final round<small>Livro, página 61</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f15.mp3" download="Entrevista_faixa_15.mp3">baixar MP3</a></li><li class="trk" id="t16" data-como="Ligue o gravador e dê play. Responda em voz alta depois de cada bipe; o silêncio tem o tempo da resposta. Não pause o áudio."><button class="play" data-src="a/f16.mp3" aria-label="Tocar faixa 16"><span class="num">16</span><span class="tt">Simulação 5 - Sotaque britânico<small>Livro, página 62</small></span><span class="ic" aria-hidden="true"></span></button><a class="dl" href="a/f16.mp3" download="Entrevista_faixa_16.mp3">baixar MP3</a></li></ol></section>
+  <p class="note">Nas faixas de treino e nas simulações, o silêncio depois do bipe é o seu tempo de resposta: responda em voz alta e, se puder, grave.</p>
+</div>
+<div class="bar"><div class="in">
+  <div class="now" id="now">Escolha uma faixa <span>· nada tocando</span></div>
+  <audio id="pl" controls preload="none"></audio>
+</div></div>
+<script>
+const pl=document.getElementById('pl'),now=document.getElementById('now');
+let atual=null;
+function sel(li,tocar){
+  if(atual)atual.classList.remove('on');
+  atual=li;li.classList.add('on');
+  const b=li.querySelector('.play');
+  pl.src=b.dataset.src;
+  now.innerHTML='';
+  const t=document.createElement('span');t.style.color='inherit';t.style.fontWeight='600';
+  t.textContent='Faixa '+li.querySelector('.num').textContent+' ';
+  const s=document.createElement('span');s.textContent='· '+li.querySelector('.tt').firstChild.textContent;
+  now.append(t,s);
+  if(tocar)pl.play().catch(()=>{});
+}
+document.querySelectorAll('.trk').forEach(li=>{
+  li.querySelector('.play').addEventListener('click',()=>{
+    if(atual===li&&!pl.paused){pl.pause();return}
+    if(atual===li){pl.play().catch(()=>{});return}
+    sel(li,true);
+  });
+});
+pl.addEventListener('pause',()=>atual&&atual.classList.remove('on'));
+pl.addEventListener('play',()=>atual&&atual.classList.add('on'));
+function abrirHash(){
+  const m=(location.hash||'').match(/^#f?([0-9]+)$/);const li=m&&document.getElementById('t'+m[1].padStart(2,'0'));
+  if(!li)return;
+  document.querySelectorAll('.alvo').forEach(x=>x.classList.remove('alvo'));
+  li.classList.add('alvo');sel(li,false);
+  document.getElementById('hk').textContent='Faixa '+li.querySelector('.num').textContent;
+  const tt=li.querySelector('.tt');
+  document.getElementById('ht').textContent=tt.firstChild.textContent;
+  document.getElementById('hi').textContent=tt.querySelector('small').textContent;
+  const como=document.getElementById('como');como.innerHTML='<b>O que fazer</b>';
+  como.append(document.createTextNode(li.dataset.como||'Ouça a faixa e siga o enunciado da atividade.'));
+  document.getElementById('hero').hidden=false;window.scrollTo({top:0});
+}
+const big=document.getElementById('big'),bl=document.getElementById('bl');
+big.addEventListener('click',()=>{if(pl.paused){pl.play().catch(()=>{})}else{pl.pause()}});
+pl.addEventListener('play',()=>{big.classList.add('pause');bl.textContent='Pausar'});
+pl.addEventListener('pause',()=>{big.classList.remove('pause');bl.textContent='Tocar'});
+pl.addEventListener('ended',()=>{bl.textContent='Ouvir de novo'});
+window.addEventListener('hashchange',abrirHash);abrirHash();
+</script>
+</body></html>
